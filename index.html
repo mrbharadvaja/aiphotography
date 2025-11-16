@@ -7,10 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
+        /* --- NEW DARK THEME --- */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #ffffff;
-            color: #111827;
+            background-color: #000000; /* Pure Black Background */
+            color: #f3f4f6; /* Light Gray Text */
         }
 
         /* --- Accent Colors --- */
@@ -38,10 +39,10 @@
             transform: translateY(0);
         }
 
-        /* --- Service Card --- */
+        /* --- NEW: Service Card (Dark Theme) --- */
         .service-card {
-            background-color: #f9fafb;
-            border: 1px solid #e5e7eb;
+            background-color: #111827; /* Dark Blue-Gray */
+            border: 1px solid #1f2937; /* Darker Border */
             border-radius: 12px;
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -113,10 +114,10 @@
 
     </style>
 </head>
-<body class="bg-white">
+<body class="bg-black">
 
     <!-- Hero Section -->
-    <header class="min-h-screen flex flex-col justify-center items-center text-center p-6 bg-gray-50">
+    <header class="min-h-screen flex flex-col justify-center items-center text-center p-6 bg-black">
         <div class="max-w-4xl mx-auto">
             <h1 class="text-5xl md:text-8xl font-black uppercase tracking-tighter scroll-animate">
                 <span class="text-yellow">MR</span> BHARADVAJA
@@ -124,7 +125,7 @@
             <h2 class="text-3xl md:text-5xl font-bold text-green tracking-tight scroll-animate" style="transition-delay: 200ms;">
                 AI PHOTOGRAPHER
             </h2>
-            <p class="mt-4 text-lg md:text-xl text-gray-700 max-w-2xl mx-auto scroll-animate" style="transition-delay: 400ms;">
+            <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto scroll-animate" style="transition-delay: 400ms;">
                 Professional AI Photography | Cinematic Visual Art | Premium Editing Studio
             </p>
             <div class="mt-8 space-x-4 scroll-animate" style="transition-delay: 600ms;">
@@ -141,24 +142,24 @@
     <!-- About Me Section -->
     <section id="about" class="py-20 md:py-32 px-6">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl font-bold tracking-tight mb-4 scroll-animate">ABOUT ME</h2>
-            <p class="text-lg text-gray-800 mb-6 scroll-animate">
+            <h2 class="text-3xl font-bold tracking-tight text-white mb-4 scroll-animate">ABOUT ME</h2>
+            <p class="text-lg text-gray-300 mb-6 scroll-animate">
                 I am Mr Bharadvaja, an AI Photographer and Visual Story Artist who blends technology with emotion. My work focuses on creating cinematic, Hollywood-style visuals for weddings, pre-weddings, travel stories, portraits, wildlife sequences, lifestyle shoots, birthdays, anniversaries and romantic themes.
             </p>
-            <p class="text-lg text-gray-800 scroll-animate" style="transition-delay: 200ms;">
+            <p class="text-lg text-gray-300 scroll-animate" style="transition-delay: 200ms;">
                 I combine AI artistry with traditional photography aesthetics. The goal is simple: deliver images that feel alive, emotional and timeless.
             </p>
         </div>
     </section>
 
     <!-- Profile Summary Section -->
-    <section id="summary" class="py-20 md:py-32 px-6 bg-gray-50">
+    <section id="summary" class="py-20 md:py-32 px-6 bg-gray-900">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl font-bold tracking-tight mb-6 scroll-animate">MY STYLE & WORKFLOW</h2>
-            <p class="text-xl text-gray-800 mb-8 scroll-animate">
+            <h2 class="text-3xl font-bold tracking-tight text-white mb-6 scroll-animate">MY STYLE & WORKFLOW</h2>
+            <p class="text-xl text-gray-200 mb-8 scroll-animate">
                 I create fully digital, hyper-realistic photo sequences that look like they were shot on high-end cinema cameras. Every frame carries depth, texture, mood, color harmony and storytelling.
             </p>
-            <ul class="text-left max-w-lg mx-auto space-y-3 text-gray-700">
+            <ul class="text-left max-w-lg mx-auto space-y-3 text-gray-300">
                 <li class="flex items-center scroll-animate" style="transition-delay: 100ms;">
                     <svg class="w-5 h-5 text-green mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                     AI Cinematic Rendering
@@ -187,27 +188,27 @@
     <section id="services" class="py-20 md:py-32 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight scroll-animate">SERVICES & PACKAGES</h2>
-                <p class="mt-4 text-lg text-gray-700 scroll-animate" style="transition-delay: 150ms;">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white scroll-animate">SERVICES & PACKAGES</h2>
+                <p class="mt-4 text-lg text-gray-400 scroll-animate" style="transition-delay: 150ms;">
                     All services include: 4K/8K Outputs, Cinematic Color Grade, High-Detail Portrait Work & AI-Enhanced Lighting.
                 </p>
             </div>
 
             <!-- Services Grid -->
+            <!-- UPDATED with 16 services and new URLs -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Service 1: Pre-Wedding -->
                 <div class="service-card scroll-animate">
                     <div class="aspect-w-16 aspect-h-10 overflow-hidden">
-                        <img src="https://placehold.co/600x400/111827/FFFFFF?text=AI+Pre-Wedding" alt="AI Pre-Wedding" class="w-full h-full object-cover">
+                        <img src="https://i.imgur.com/aUFAgBb.jpeg" alt="AI Pre-Wedding" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">1. AI PRE-WEDDING PHOTOGRAPHY</h3>
+                        <h3 class="text-xl font-bold mb-2 text-white">1. AI PRE-WEDDING PHOTOGRAPHY</h3>
                         <p class="text-2xl font-black text-yellow mb-3">₹6,999</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
                             <li>5–15 AI Rendered Cinematic Shots</li>
                             <li>10 Signature Portraits</li>
-                            <li>5 Poster-Style Couple Frames</li>
                             <li>Custom Theme (Royal, Beach, Vintage)</li>
                         </ul>
                         <div class="flex gap-3">
@@ -220,15 +221,14 @@
                 <!-- Service 2: Wedding -->
                 <div class="service-card scroll-animate">
                     <div class="aspect-w-16 aspect-h-10 overflow-hidden">
-                        <img src="https://placehold.co/600x400/111827/FFFFFF?text=AI+Wedding+Ceremony" alt="AI Wedding" class="w-full h-full object-cover">
+                        <img src="https://i.imgur.com/Krm8FNn.jpeg" alt="AI Wedding" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">2. AI WEDDING CEREMONY SET</h3>
+                        <h3 class="text-xl font-bold mb-2 text-white">2. AI WEDDING CEREMONY SET</h3>
                         <p class="text-2xl font-black text-yellow mb-3">₹7,999</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
                             <li>5–15 Wedding Ceremony Shots</li>
                             <li>15 Royal Portraits</li>
-                            <li>8 Premium Album Frames</li>
                             <li>Cultural Theme Setup</li>
                         </ul>
                         <div class="flex gap-3">
@@ -241,12 +241,12 @@
                 <!-- Service 3: Travel -->
                 <div class="service-card scroll-animate">
                     <div class="aspect-w-16 aspect-h-10 overflow-hidden">
-                        <img src="https://placehold.co/600x400/111827/FFFFFF?text=AI+Travel+Photography" alt="AI Travel" class="w-full h-full object-cover">
+                        <img src="https://i.imgur.com/CEdipa2.jpeg" alt="AI Travel" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">3. AI TRAVEL PHOTOGRAPHY</h3>
+                        <h3 class="text-xl font-bold mb-2 text-white">3. AI TRAVEL PHOTOGRAPHY</h3>
                         <p class="text-2xl font-black text-yellow mb-3">₹4,999</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
                             <li>5–15 Cinematic Travel Scenes</li>
                             <li>10 Portraits</li>
                             <li>Story-Style Series (Adventure, Luxury)</li>
@@ -261,12 +261,12 @@
                 <!-- Service 4: Wildlife -->
                 <div class="service-card scroll-animate">
                     <div class="aspect-w-16 aspect-h-10 overflow-hidden">
-                        <img src="https://placehold.co/600x400/111827/FFFFFF?text=AI+Wildlife+Photography" alt="AI Wildlife" class="w-full h-full object-cover">
+                        <img src="https://i.imgur.com/ctpx9bi.jpeg" alt="AI Wildlife" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">4. AI WILDLIFE PHOTOGRAPHY</h3>
+                        <h3 class="text-xl font-bold mb-2 text-white">4. AI WILDLIFE PHOTOGRAPHY</h3>
                         <p class="text-2xl font-black text-yellow mb-3">₹5,999</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
                             <li>5–15 Wildlife Frames</li>
                             <li>Ultra-Detail Animal Texturing</li>
                             <li>Cinematic Jungle Lighting</li>
@@ -281,12 +281,12 @@
                 <!-- Service 5: Birthday -->
                 <div class="service-card scroll-animate">
                     <div class="aspect-w-16 aspect-h-10 overflow-hidden">
-                        <img src="https://placehold.co/600x400/111827/FFFFFF?text=AI+Birthday+Shoot" alt="AI Birthday" class="w-full h-full object-cover">
+                        <img src="https://i.imgur.com/DznvE3X.jpeg" alt="AI Birthday" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">5. AI BIRTHDAY SHOOT</h3>
+                        <h3 class="text-xl font-bold mb-2 text-white">5. AI BIRTHDAY SHOOT</h3>
                         <p class="text-2xl font-black text-yellow mb-3">₹3,499</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
                             <li>5–15 AI Birthday Portraits</li>
                             <li>10 Cake + Party Theme Frames</li>
                         </ul>
@@ -300,12 +300,12 @@
                 <!-- Service 6: Anniversary -->
                 <div class="service-card scroll-animate">
                     <div class="aspect-w-16 aspect-h-10 overflow-hidden">
-                        <img src="https://placehold.co/600x400/111827/FFFFFF?text=AI+Anniversary+Shoot" alt="AI Anniversary" class="w-full h-full object-cover">
+                        <img src="https://i.imgur.com/ffP4Tay.jpeg" alt="AI Anniversary" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">6. AI ANNIVERSARY SHOOT</h3>
+                        <h3 class="text-xl font-bold mb-2 text-white">6. AI ANNIVERSARY SHOOT</h3>
                         <p class="text-2xl font-black text-yellow mb-3">₹3,999</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
                             <li>5–15 Romantic Frames</li>
                             <li>10 Couple Portraits</li>
                             <li>Themes: Paris, Beach, Vintage Garden</li>
@@ -320,12 +320,12 @@
                 <!-- Service 7: Romantic -->
                 <div class="service-card scroll-animate">
                     <div class="aspect-w-16 aspect-h-10 overflow-hidden">
-                        <img src="https://placehold.co/600x400/111827/FFFFFF?text=AI+Romantic+Couple+Shoot" alt="AI Romantic" class="w-full h-full object-cover">
+                        <img src="https://i.imgur.com/0QxHON9.jpeg" alt="AI Romantic" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">7. AI ROMANTIC COUPLE SHOOT</h3>
+                        <h3 class="text-xl font-bold mb-2 text-white">7. AI ROMANTIC COUPLE SHOOT</h3>
                         <p class="text-2xl font-black text-yellow mb-3">₹2,999</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
                             <li>5–15 Romantic Cinematic Shots</li>
                             <li>5 Poster Frames</li>
                         </ul>
@@ -339,12 +339,12 @@
                 <!-- Service 8: Candid -->
                 <div class="service-card scroll-animate">
                     <div class="aspect-w-16 aspect-h-10 overflow-hidden">
-                        <img src="https://placehold.co/600x400/111827/FFFFFF?text=AI+Candid+Portraits" alt="AI Candid" class="w-full h-full object-cover">
+                        <img src="https://i.imgur.com/6zcaQG1.jpeg" alt="AI Candid" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">8. AI CANDID PORTRAITS</h3>
+                        <h3 class="text-xl font-bold mb-2 text-white">8. AI CANDID PORTRAITS</h3>
                         <p class="text-2xl font-black text-yellow mb-3">₹2,499</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
                             <li>5–15 Candid Frames</li>
                             <li>5 Signature Portraits</li>
                         </ul>
@@ -358,12 +358,12 @@
                 <!-- Service 9: Baby Birth -->
                 <div class="service-card scroll-animate">
                     <div class="aspect-w-16 aspect-h-10 overflow-hidden">
-                        <img src="https://placehold.co/600x400/111827/FFFFFF?text=AI+Baby+Shoot" alt="AI Baby" class="w-full h-full object-cover">
+                        <img src="https://i.imgur.com/14puYOb.jpeg" alt="AI Baby" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">9. AI BABY BIRTH SHOOT</h3>
+                        <h3 class="text-xl font-bold mb-2 text-white">9. AI BABY BIRTH SHOOT</h3>
                         <p class="text-2xl font-black text-yellow mb-3">₹3,999</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
                             <li>5–15 Baby Portraits</li>
                             <li>10 Family Frames</li>
                             <li>Soft light & angelic themes</li>
@@ -378,16 +378,15 @@
                 <!-- Service 10: Portrait Master -->
                 <div class="service-card scroll-animate">
                     <div class="aspect-w-16 aspect-h-10 overflow-hidden">
-                        <img src="https://placehold.co/600x400/111827/FFFFFF?text=AI+Portrait+Master+Package" alt="AI Portraits" class="w-full h-full object-cover">
+                        <img src="https://i.imgur.com/p6tP1BH.jpeg" alt="AI Portraits" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">10. AI PORTRAIT MASTER PACKAGE</h3>
+                        <h3 class="text-xl font-bold mb-2 text-white">10. AI PORTRAIT MASTER PACKAGE</h3>
                         <p class="text-2xl font-black text-yellow mb-3">₹4,999</p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
                             <li>5–15 Portraits</li>
                             <li>Advanced Skin Detailing</li>
                             <li>Studio Lighting Effects</li>
-                            <li>Magazine-Style Frames</li>
                         </ul>
                         <div class="flex gap-3">
                             <a href="https://wa.me/919631815142?text=Hi, I'm interested in the AI Portrait Master package." target="_blank" class="btn btn-whatsapp flex-1">Book on WhatsApp</a>
@@ -396,15 +395,135 @@
                     </div>
                 </div>
 
-            </div>
+                <!-- NEW Service 11: Pregnancy -->
+                <div class="service-card scroll-animate">
+                    <div class="aspect-w-16 aspect-h-10 overflow-hidden">
+                        <img src="https://i.imgur.com/NKX9sGv.jpeg" alt="AI Pregnancy" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">11. AI PREGNANCY PHOTO SHOOT</h3>
+                        <p class="text-2xl font-black text-yellow mb-3">₹4,499</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
+                            <li>5-10 Maternity Glow Shots</li>
+                            <li>Cinematic Couple Portraits</li>
+                            <li>Angelic & Serene Themes</li>
+                        </ul>
+                        <div class="flex gap-3">
+                            <a href="https://wa.me/919631815142?text=Hi, I'm interested in the AI Pregnancy Shoot package." target="_blank" class="btn btn-whatsapp flex-1">Book on WhatsApp</a>
+                            <a href="mailto:mrbharadvajaa@gmail.com?subject=AI Pregnancy Shoot Package" class="btn btn-email flex-1">Book by Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW Service 12: Haldi -->
+                <div class="service-card scroll-animate">
+                    <div class="aspect-w-16 aspect-h-10 overflow-hidden">
+                        <img src="https://i.imgur.com/2Wg8PcJ.jpeg" alt="AI Haldi Ceremony" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">12. AI WEDDING HALDI CEREMONY</h3>
+                        <p class="text-2xl font-black text-yellow mb-3">₹5,499</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
+                            <li>10-15 Vibrant Haldi Moments</li>
+                            <li>Joyful Family Candids</li>
+                            <li>Rich Yellow & Green Tones</li>
+                        </ul>
+                        <div class="flex gap-3">
+                            <a href="https://wa.me/919631815142?text=Hi, I'm interested in the AI Haldi Ceremony package." target="_blank" class="btn btn-whatsapp flex-1">Book on WhatsApp</a>
+                            <a href="mailto:mrbharadvajaa@gmail.com?subject=AI Haldi Ceremony Package" class="btn btn-email flex-1">Book by Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW Service 13: Mehndi -->
+                <div class="service-card scroll-animate">
+                    <div class="aspect-w-16 aspect-h-10 overflow-hidden">
+                        <img src="https://i.imgur.com/QNQgcbF.jpeg" alt="AI Mehndi Ceremony" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">13. AI MEHNDI CEREMONY</h3>
+                        <p class="text-2xl font-black text-yellow mb-3">₹4,999</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
+                            <li>10 Intricate Detail Shots</li>
+                            <li>Elegant Bridal Portraits</li>
+                            <li>Festive & Colorful Ambiance</li>
+                        </ul>
+                        <div class="flex gap-3">
+                            <a href="https://wa.me/919631815142?text=Hi, I'm interested in the AI Mehndi Ceremony package." target="_blank" class="btn btn-whatsapp flex-1">Book on WhatsApp</a>
+                            <a href="mailto:mrbharadvajaa@gmail.com?subject=AI Mehndi Ceremony Package" class="btn btn-email flex-1">Book by Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW Service 14: Jaimala -->
+                <div class="service-card scroll-animate">
+                    <div class="aspect-w-16 aspect-h-10 overflow-hidden">
+                        <img src="https://i.imgur.com/zVV5STF.jpeg" alt="AI Jaimala Ceremony" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">14. AI JAIMALA CEREMONY</h3>
+                        <p class="text-2xl font-black text-yellow mb-3">₹6,499</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
+                            <li>5-10 Grand Jaimala Moments</li>
+                            <li>Cinematic Couple Shots</li>
+                            <li>Focus on Emotion & Grandeur</li>
+                        </ul>
+                        <div class="flex gap-3">
+                            <a href="https://wa.me/919631815142?text=Hi, I'm interested in the AI Jaimala Ceremony package." target="_blank" class="btn btn-whatsapp flex-1">Book on WhatsApp</a>
+                            <a href="mailto:mrbharadvajaa@gmail.com?subject=AI Jaimala Ceremony Package" class="btn btn-email flex-1">Book by Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW Service 15: Ring Ceremony -->
+                <div class="service-card scroll-animate">
+                    <div class="aspect-w-16 aspect-h-10 overflow-hidden">
+                        <img src="https://i.imgur.com/l6M0gTP.jpeg" alt="AI Ring Ceremony" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">15. AI RING CEREMONY</h3>
+                        <p class="text-2xl font-black text-yellow mb-3">₹3,999</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
+                            <li>5-10 Elegant Ring Exchange Shots</li>
+                            <li>Romantic Couple Portraits</li>
+                            <li>Sophisticated Lighting</li>
+                        </ul>
+                        <div class="flex gap-3">
+                            <a href="https://wa.me/919631815142?text=Hi, I'm interested in the AI Ring Ceremony package." target="_blank" class="btn btn-whatsapp flex-1">Book on WhatsApp</a>
+                            <a href="mailto:mrbharadvajaa@gmail.com?subject=AI Ring Ceremony Package" class="btn btn-email flex-1">Book by Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW Service 16: Annaprashan -->
+                <div class="service-card scroll-animate">
+                    <div class="aspect-w-16 aspect-h-10 overflow-hidden">
+                        <img src="https://i.imgur.com/kzsn2ZC.jpeg" alt="AI Annaprashan Ceremony" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-white">16. AI ANNAPRASHAN CEREMONY</h3>
+                        <p class="text-2xl font-black text-yellow mb-3">₹3,499</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
+                            <li>10-15 "First Bite" Photos</li>
+                            <li>Warm Family Portraits</li>
+                            <li>Focus on Baby's Expression</li>
+                        </ul>
+                        <div class="flex gap-3">
+                            <a href="https://wa.me/919631815142?text=Hi, I'm interested in the AI Annaprashan Ceremony package." target="_blank" class="btn btn-whatsapp flex-1">Book on WhatsApp</a>
+                            <a href="mailto:mrbharadvajaa@gmail.com?subject=AI Annaprashan Ceremony Package" class="btn btn-email flex-1">Book by Email</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End Grid -->
         </div>
     </section>
 
     <!-- Why Choose Me Section -->
-    <section id="why" class="py-20 md:py-32 px-6 bg-gray-50">
+    <section id="why" class="py-20 md:py-32 px-6 bg-gray-900">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl font-bold tracking-tight mb-8 scroll-animate">WHY CHOOSE ME?</h2>
-            <ul class="text-left max-w-lg mx-auto space-y-4 text-gray-800 text-lg">
+            <h2 class="text-3xl font-bold tracking-tight text-white mb-8 scroll-animate">WHY CHOOSE ME?</h2>
+            <ul class="text-left max-w-lg mx-auto space-y-4 text-gray-200 text-lg">
                 <li class="flex items-center scroll-animate" style="transition-delay: 100ms;">
                     <svg class="w-6 h-6 text-green mr-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                     Cinematic, Hollywood-Grade Output Quality
@@ -430,7 +549,7 @@
     </section>
 
     <!-- Contact Footer -->
-    <footer id="contact" class="py-20 px-6 bg-gray-900 text-white">
+    <footer id="contact" class="py-20 px-6 bg-black text-white">
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-3xl font-bold tracking-tight mb-6 scroll-animate">LET'S CREATE MAGIC</h2>
             <p class="text-xl text-gray-300 mb-8 scroll-animate" style="transition-delay: 150ms;">
@@ -447,7 +566,7 @@
             <p class="mt-10 text-gray-400 scroll-animate" style="transition-delay: 450ms;">
                 Location: India + International Digital Service
             </p>
-            <p class="mt-10 text-gray-600 text-sm scroll-animate" style="transition-delay: 600ms;">
+            <p class="mt-10 text-gray-500 text-sm scroll-animate" style="transition-delay: 600ms;">
                 &copy; <span id="current-year"></span> MR BHARADVAJA AI PHOTOGRAPHY STUDIO.
             </p>
         </div>
@@ -492,4 +611,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 </body>
 </html>
-
